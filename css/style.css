@@ -6,6 +6,8 @@ a {
     text-decoration: none;
 }
 
+/* HEADER */
+
 header nav {
     background-color: #303C4B;
 }
@@ -15,7 +17,22 @@ header nav {
     font-weight: bold;
 }
 
-.brand {
+.brandSpan {
     color: #77B6EA
 }
 
+/* MAIN */
+
+.aboutMeSection{
+    background-color: #303C4B;
+    color: white;
+}
+
+.profilePicture {
+    height: 80%;
+    width: 50%;
+}
+
+.aboutMeText {
+    text-align: justify;
+}
