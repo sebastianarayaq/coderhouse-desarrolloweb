@@ -23,6 +23,7 @@ header nav {
 
 /* MAIN */
 
+/* ABOUT ME */
 .aboutMeSection{
     background-color: #303C4B;
     color: white;
@@ -35,4 +36,11 @@ header nav {
 
 .aboutMeText {
     text-align: justify;
+}
+
+
+/* PORTFOLIO */
+
+.card-img-top {
+    width: 70%;
 }
