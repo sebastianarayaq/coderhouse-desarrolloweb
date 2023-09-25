@@ -1,5 +1,5 @@
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;;
 }
 
 a {
@@ -12,8 +12,9 @@ header nav {
     background-color: #303C4B;
 }
 
+
 .navbar-brand {
-    font-size: 24px;
+    font-size: 34px;
     font-weight: bold;
 }
 
@@ -29,9 +30,22 @@ header nav {
     color: white;
 }
 
+
 .profilePicture {
-    height: 80%;
-    width: 50%;
+    animation: entrada 1.3s;
+    border-radius: 50%;
+}
+
+@keyframes entrada {
+    0% {
+        opacity: 0;
+        transform: rotate(60deg);
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
 }
 
 .aboutMeText {
@@ -43,4 +57,59 @@ header nav {
 
 .card-img-top {
     width: 70%;
+}
+
+.card-img-top:hover {
+    animation: shake .3s;
+    opacity: .5;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(5deg);
+        opacity: .75;
+    }
+
+    50% {
+        transform: rotate(-5deg);
+        opacity: .6;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: .5;
+    }
+}
+
+/* FOOTER */
+footer {
+    padding: 10px;
+    background-color: #303C4B;
+    bottom: 0;
+}
+
+.footerText {
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialIcon {
+    display: flex;
+    justify-content: center;
+}
+
+.footerIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.socialTag a{
+    color: white;
 }

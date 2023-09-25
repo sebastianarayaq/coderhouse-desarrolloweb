@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio</title>
 </head>
@@ -16,26 +16,26 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">S<span class="brandSpan">A</span></a>
+                <a class="navbar-brand" href="index.html">S<span class="brandSpan">A</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav fs-5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About me</a>
+                            <a class="nav-link" href="./pages/about-me.html">About me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="./pages/portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                            <a class="nav-link" href="./pages/skills.html">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="./pages/skills.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -46,29 +46,29 @@
     <main>
         <!-- ABOUT ME -->
         <section class="container-fluid aboutMeSection p-4">
-            <div class="row d-sm-flex d-md-flex d-lg-flex justify-content-between align-items-center flex-wrap-reverse mx-4">
-                <div class="col-sm-6 col-md-6 col-lg-6 d-sm-flex-columm d-md-flex-columm d-lg-flex-columm justify-content-center">
-                    <p>Hi I'm <span class="brandSpan">Sebastián Araya</span></p>
-                    <p class="aboutMeText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit molestiae quam nemo ipsa perferendis nihil earum minus saepe, obcaecati ad doloribus delectus explicabo ipsum modi dolor suscipit nesciunt doloremque incidunt repellat totam debitis provident harum. Quasi exercitationem natus libero nostrum.</p>
-                    <div class="row d-sm-flex d-md-flex d-lg-flex justify-content-between gap-2">
+            <div class="row d-sm-flex d-md-flex d-lg-flex justify-content-around align-items-center flex-wrap-reverse mx-4 my-3 row-gap-5 aboutMeContainer">
+                <div class="col-sm-5 col-md-5 col-lg-5 d-sm-flex-columm d-md-flex-columm d-lg-flex-columm justify-content-center">
+                    <h1 class="fs-2">Hi I'm <span class="brandSpan fs-2">Sebastián Araya</span></p>
+                    <p class="aboutMeText fs-5 my-4">Graduate in Computer Engineering and Full Stack Developer career's student at Coderhouse.</p>
+                    <div class="row d-sm-flex d-md-flex d-lg-flex justify-content-between gap-3">
                         <div class="col-sm-4 col-md-4 col-lg-4 d-sm-flex d-md-flex d-lg-flex">
                             <button type="button" class="btn btn-dark">Download CV</button>
                         </div>
-                        <div class="col-sm-4 col-md-4 col-lg-4 d-sm-flex d-md-flex d-lg-flex">
-                            <button type="button" class="btn btn-dark">Read more</button>
+                        <div class="col-sm-4 col-md-4 col-lg-4 d-sm-flex d-md-flex d-lg-flex justify-content-end">
+                            <a class="btn btn-dark" href="./pages/about-me.html">Read more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 d-flex justify-content-center">
-                    <img class="profilePicture" src="./assets/person.png" alt="Profile picture">
+                    <img class="profilePicture img-fluid" src="./assets/perfil.jpeg" alt="Profile picture">
                 </div>
             </div>
         </section>       
         <!-- PORTFOLIO -->
-        <section class="container-fluid p-4">
+        <section class="container-fluid p-4 my-3">
             <div class="row d-sm-flex d-md-flex d-lg-flex justify-content-center text-center">
                 <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h2>Portfolio</h2>
+                    <h2 class="fw-bold">Portfolio</h2>
                 </div>
             </div>
             <div class="row row-gap-2">
@@ -76,7 +76,7 @@
                     <div class="card d-flex d-flex-column align-items-center">
                         <img src="./assets/web-frame.png" class="card-img-top" alt="Project preview">
                         <div class="card-body">
-                            <h5 class="card-title">Project #1</h5>
+                            <h5 class="card-title fw-bold">Project #1</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="./pages/portfolio.html" class="btn btn-dark">More projects</a>
                         </div>
@@ -86,7 +86,7 @@
                     <div class="card d-flex d-flex-column align-items-center">
                         <img src="./assets/web-frame.png" class="card-img-top" alt="Project preview">
                         <div class="card-body">
-                            <h5 class="card-title">Project #2</h5>
+                            <h5 class="card-title fw-bold">Project #2</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="./pages/portfolio.html" class="btn btn-dark">More projects</a>
                         </div>
@@ -96,7 +96,7 @@
                     <div class="card d-flex d-flex-column align-items-center">
                         <img src="./assets/web-frame.png" class="card-img-top" alt="Project preview">
                         <div class="card-body">
-                            <h5 class="card-title">Project #3</h5>
+                            <h5 class="card-title fw-bold">Project #3</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="./pages/portfolio.html" class="btn btn-dark">More projects</a>
                         </div>
@@ -105,7 +105,80 @@
             </div>
         </section>
         <!-- SKILLS -->
-
+        <section class="container-fluid p-4 my-3">
+            <div class="row d-sm-flex d-md-flex d-lg-flex justify-content-center text-center">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <h2 class="fw-bold">Skills</h2>
+                </div>
+            </div>
+            <div class="row d-sm-flex d-md-flex d-lg-flex justify-content-center row-gap-2">
+                <div class="col-sm-4 col-md-4 col-lg-4 d-sm-flex d-md-flex d-lg-flex justify-content-center">
+                    <div class="card d-flex d-flex-column align-items-center">
+                        <img src="assets/html.png" class="img-fluid card-img-top" alt="HTML image">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-center">HTML</h5>
+                            <p class="card-text text-center">Proficient in HTML, adept at creating and structuring web content using tags, links, images, and forms, while maintaining clean and semantic code for enhanced online accessibility and presentation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 d-sm-flex d-md-flex d-lg-flex justify-content-center">
+                    <div class="card d-flex d-flex-column align-items-center">
+                        <img src="assets/css.png" class="img-fluid card-img-top" alt="CSS image">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-center">CSS</h5>
+                            <p class="card-text text-center">Proficient in web design with CSS, experienced in styling, layout, and responsive design to ensure an appealing online presentation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 d-sm-flex d-md-flex d-lg-flex justify-content-center">
+                    <div class="card d-flex d-flex-column align-items-center">
+                        <img src="assets/git.png" class="img-fluid card-img-top" alt="GIT image">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-center">GIT</h5>
+                            <p class="card-text text-center">Proficient in Git for version control, collaboration, and tracking changes in software projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-sm-flex d-md-flex d-lg-flex justify-content-center text-center">
+                    <div class="col-sm-3 col-md-3 col-lg-3">
+                        <a href="./pages/portfolio.html" class="btn btn-dark">More skills</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footerText">
+            <p>Sebastian Araya | Full-Stack Developer</p>
+        </div>
+        <div class="socialContainer">
+            <div class="socialNetwork">
+                <div class="socialIcon">
+                    <a href="https://www.linkedin.com/" target="_blank"><img class="footerIcon" src="./assets/linkedin.svg" alt="Linkedin icon"></a>
+                </div>
+                <div class="socialTag">
+                    <a href="https://www.linkedin.com/" target="_blank">@Linkedin</a>
+                </div>
+            </div>
+            <div class="socialNetwork">
+                <div class="socialIcon">
+                    <a href="https://www.github.com/" target="_blank"><img class="footerIcon" src="./assets/github.svg" alt="Linkedin icon"></a>
+                </div>
+                <div class="socialTag">
+                    <a href="https://www.github.com/" target="_blank">@Github</a>
+                </div>
+            </div>
+            <div class="socialNetwork">
+                <div class="socialIcon">
+                    <a href="https://www.youtube.com/" target="_blank"><img class="footerIcon" src="./assets/youtube.svg" alt="Linkedin icon"></a>
+                </div>
+                <div class="socialTag">
+                    <a href="https://www.youtube.com/" target="_blank">@Youtube</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
