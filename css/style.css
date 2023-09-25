@@ -53,7 +53,7 @@ header nav {
 }
 
 .aboutMeText {
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -73,6 +73,8 @@ footer {
     padding: 10px;
     background-color: #303C4B;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .footerText {
@@ -85,6 +87,7 @@ footer {
 .socialContainer {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .socialIcon {
@@ -154,6 +157,7 @@ iframe {
 
 .linkIcon:hover {
     animation: shake .3s;;
+    opacity: .5;
 }
 
 .textDescription {
