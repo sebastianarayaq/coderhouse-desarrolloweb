@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Portfolio</title>
 </head>
-<body>
-<!-- ENCABEZADO -->
+<body class="d-flex flex-column justify-content-between">
+    <!-- ENCABEZADO -->
     <header>
         <nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
@@ -42,8 +42,28 @@
             </div>
         </nav>
     </header>
-<!-- SECCIONES -->
+    <!-- SECCIONES -->
     <main>
+        <section class="container-fluid p-4">
+            <div class="row d-sm-flex d-md-flex d-lg-flex justify-content-around align-items-center">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <h1 class="fw-bold">About me</h3>
+                    <p class="my-4 textDescription">
+                        I'm Sebastián Araya, a computer engineer on an exciting journey toward becoming a full-stack developer at Coderhouse. My current focus lies in HTML, CSS, and Git, and I'm continually expanding my skills to become a Full Stack developer. What motivates me the most is the ability to bring all my ideas to life and provide real value through my projects. Graduated in Computer Engineering from Duoc UC, I'm well-versed in agile methodologies and am already working on my first projects. Besides my love for development, I enjoy playing video games in my free time.
+                    </p>
+                    <div class="row d-sm-flex d-md-flex d-lg-flex justify-content-center">
+                        <div class="col-sm-6 col-md-6 col-lg-6 d-sm-flex d-md-flex d-lg-flex justify-content-center align-items-center text-center">
+                            <img src="../assets/image-picture.png" class="imgPicture" alt="">
+                            <img src="../assets/image-picture.png" class="imgPicture" alt="">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13026967.38926922!2d-106.25428513633595!3d37.142902825634486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sEstados%20Unidos!5e0!3m2!1ses-419!2scl!4v1693375040349!5m2!1ses-419!2scl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 d-sm-flex d-md-flex d-lg-flex justify-content-center align-items-center text-center">
+                    <img src="../assets/person.png" class="personPicture img-fluid" alt="Profile picture">
+                </div>
+            </div>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer>

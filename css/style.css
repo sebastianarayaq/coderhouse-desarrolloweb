@@ -6,6 +6,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    min-height: 100vh;
+}
+
 /* HEADER */
 
 header nav {
@@ -64,23 +68,6 @@ header nav {
     opacity: .5;
 }
 
-@keyframes shake {
-    0% {
-        transform: rotate(5deg);
-        opacity: .75;
-    }
-
-    50% {
-        transform: rotate(-5deg);
-        opacity: .6;
-    }
-
-    100% {
-        transform: rotate(0deg);
-        opacity: .5;
-    }
-}
-
 /* FOOTER */
 footer {
     padding: 10px;
@@ -112,4 +99,80 @@ footer {
 
 .socialTag a{
     color: white;
+}
+
+/* ABOUT ME PAGE */
+
+.imgPicture {
+    width: 70%;
+}
+
+.personPicture {
+    height: 500px;
+    width: 200px;
+}
+
+iframe {
+    width: 70%;
+}
+
+/* PORTFOLIO PAGE */
+
+.portfolioCard {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolioTitleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.webPreviewPortfolioContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.webPreviewImagePortfolio {
+    width: 50%;
+}
+
+.linkContainer {
+    margin: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.linkIcon {
+    width: 30px;
+    height: 30px;
+    margin: 0 50px 10px 50px;
+}
+
+.linkIcon:hover {
+    animation: shake .3s;;
+}
+
+.textDescription {
+    text-align: justify;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(5deg);
+        opacity: .75;
+    }
+
+    50% {
+        transform: rotate(-5deg);
+        opacity: .6;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: .5;
+    }
 }
