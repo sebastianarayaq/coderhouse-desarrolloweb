@@ -19,7 +19,8 @@ header .navbar-brand {
   font-size: 34px;
   font-weight: bold;
 }
-header .brandSpan {
+
+.brandSpan {
   color: #77B6EA;
 }
 
