@@ -1,0 +1,20 @@
+//utils
+@import "utils/variables";
+
+//base
+@import "./base/reset";
+@import "./base/typography"; 
+
+//components
+@import "components/a";
+
+//layout
+@import "layout/header";
+@import "layout/body";
+@import "layout/footer";
+
+//pages
+@import "pages/index";
+@import "pages/about-me-page";
+@import "pages/portfolio-page";
+

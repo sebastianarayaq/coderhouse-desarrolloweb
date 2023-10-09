@@ -1,0 +1,51 @@
+.aboutMeSection {
+    background-color: $background-color;
+    color: $text-color;
+
+    .profilePicture {
+        animation: entrada 1.3s;
+        border-radius: 50%;
+    }
+
+    @keyframes entrada {
+        0% {
+        opacity: 0;
+        transform: rotate(60deg);
+        }
+
+        100% {
+        transform: translate(0);
+        opacity: 1;
+        }
+    }
+
+    .aboutMeText {
+        text-align: center;
+    }
+}
+
+.card-img-top {
+    width: 70%;
+
+    &:hover {
+        animation: shake .3s;
+        opacity: .5;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(5deg);
+        opacity: .75;
+    }
+
+    50% {
+        transform: rotate(-5deg);
+        opacity: .6;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: .5;
+    }
+}

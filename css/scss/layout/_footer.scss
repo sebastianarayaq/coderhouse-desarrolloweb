@@ -1,0 +1,34 @@
+footer {
+    padding: 10px;
+    background-color: $footer-bg-color;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+
+    .footerText {
+        margin-bottom: 10px;
+        color: $footer-text-color;
+        display: flex;
+        justify-content: center;
+    }
+
+    .socialContainer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .socialIcon {
+        display: flex;
+        justify-content: center;
+        }
+
+        .footerIcon {
+        width: $footer-icon-size;
+        height: $footer-icon-size;
+        }
+    }
+
+    .socialTag a {
+        color: $footer-text-color;
+    }
+}
