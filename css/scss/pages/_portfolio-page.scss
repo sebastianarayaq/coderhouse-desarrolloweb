@@ -30,8 +30,8 @@
             margin: 0 50px 10px 50px;
 
             &:hover {
-                animation: shake .3s;
-                opacity: .5;
+                @include shake-animation;
+                @include hover-opacity;
             }
         }
     }   

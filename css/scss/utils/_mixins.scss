@@ -1,0 +1,28 @@
+@mixin shake-animation {
+    &:hover {
+        animation: shake .3s;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: rotate(5deg);
+            opacity: 0.75;
+        }
+
+        50% {
+            transform: rotate(-5deg);
+            opacity: 0.6;
+        }
+
+        100% {
+            transform: rotate(0deg);
+            opacity: 0.5;
+        }
+    }
+}
+
+@mixin hover-opacity($opacity: 0.5) {
+    &:hover {
+        opacity: $opacity;
+    }
+}

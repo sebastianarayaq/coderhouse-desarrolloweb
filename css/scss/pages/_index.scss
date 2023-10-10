@@ -28,24 +28,7 @@
     width: 70%;
 
     &:hover {
-        animation: shake .3s;
-        opacity: .5;
-    }
-}
-
-@keyframes shake {
-    0% {
-        transform: rotate(5deg);
-        opacity: .75;
-    }
-
-    50% {
-        transform: rotate(-5deg);
-        opacity: .6;
-    }
-
-    100% {
-        transform: rotate(0deg);
-        opacity: .5;
+        @include shake-animation;
+        @include hover-opacity;
     }
 }
