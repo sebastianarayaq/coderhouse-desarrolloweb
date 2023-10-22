@@ -1,20 +1,21 @@
 //utils
-@import "utils/variables";
-@import "utils/mixins";
+@import "./utils/variables";
+@import "./utils/mixins";
 
 //base
 @import "./base/reset";
 @import "./base/typography"; 
 
 //components
-@import "components/a";
+@import "./components/a";
 
 //layout
-@import "layout/header";
-@import "layout/body";
-@import "layout/footer";
+@import "./layout/header";
+@import "./layout/body";
+@import "./layout/footer";
 
 //pages
-@import "pages/index";
-@import "pages/about-me-page";
-@import "pages/portfolio-page";
+@import "./pages/index";
+@import "./pages/about-me-page";
+@import "./pages/portfolio-page";
+@import "./pages/contact";

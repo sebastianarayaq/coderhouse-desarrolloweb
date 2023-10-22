@@ -165,8 +165,13 @@ iframe {
 .portfolioCard .linkContainer .linkIcon:hover:hover {
   opacity: 0.5;
 }
-.portfolioCard .textDescription {
+
+.textDescription {
   text-align: justify;
+}
+
+.box-shadow {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 /*# sourceMappingURL=style.css.map */
